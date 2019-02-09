@@ -1,0 +1,30 @@
+{
+  "name": "Windows merger",
+  "version": "1.0",
+  "description": "Merges all open windows",
+  "manifest_version": 2,
+  "permissions": ["tabs", "storage", "declarativeContent"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon_16.png",
+      "32": "icons/icon_32.png",
+      "64": "icons/icon_64.png",
+      "128": "icons/icon_128.png",
+      "256": "icons/icon_256.png",
+      "512": "icons/icon_512.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon_16.png",
+    "32": "icons/icon_32.png",
+    "64": "icons/icon_64.png",
+    "128": "icons/icon_128.png",
+    "256": "icons/icon_256.png",
+    "512": "icons/icon_512.png"
+  }
+}
