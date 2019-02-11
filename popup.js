@@ -4,10 +4,10 @@ let currentWindow;
 
 document.querySelector('form').onsubmit = function onSubmit(event) {
   event.preventDefault();
-  mergeTabs();
+  mergeWindows();
 }
 
-function mergeTabs() {
+function mergeWindows() {
   chrome.windows.getCurrent({ populate: true }, (mainWindow) => {
     currentWindow = mainWindow;
     topWindowID = currentWindow.id || currentWindow.sessionId;
